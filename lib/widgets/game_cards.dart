@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:phantom_coin/theme/style.dart';
 
 class GameCards extends StatelessWidget {
   final String imagePath;
@@ -29,7 +30,12 @@ class GameCards extends StatelessWidget {
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: [Text(GameText)],
+          children: [
+            Text(
+              GameText,
+              style: const TextStyle(color: TEXT_COLOR),
+            )
+          ],
         ),
       ],
     );

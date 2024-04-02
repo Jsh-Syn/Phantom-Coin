@@ -4,6 +4,7 @@ import 'package:phantom_coin/pages/services.dart';
 import 'package:phantom_coin/pages/streaming.dart';
 import 'package:phantom_coin/theme/style.dart';
 import 'package:phantom_coin/widgets/game_cards.dart';
+import 'package:phantom_coin/widgets/homepage_card.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -19,7 +20,7 @@ class HomePage extends StatelessWidget {
               color: const Color.fromARGB(255, 55, 28, 67),
               height: 130,
               width: 500,
-              padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 6),
+              padding: const EdgeInsets.symmetric(vertical: 11, horizontal: 6),
               child: Column(
                 children: [
                   const Text(
@@ -31,7 +32,7 @@ class HomePage extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  const SizedBox(height: 16),
+                  const SizedBox(height: 10),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -50,12 +51,17 @@ class HomePage extends StatelessWidget {
                 padding: EdgeInsets.symmetric(horizontal: 13, vertical: 8),
                 child: Column(
                   children: [
+                    SizedBox(height: 5),
+                    HPCard(),
+                    SizedBox(height: 10),
                     Row(
                       children: [
                         Text(
-                          'Game Currency Discounts',
+                          'In-game Currency Discounts',
                           style: TextStyle(
-                              fontSize: 17, fontWeight: FontWeight.bold),
+                              fontSize: 17,
+                              fontWeight: FontWeight.bold,
+                              color: TEXT_COLOR),
                         ),
                       ],
                     ),
@@ -63,18 +69,18 @@ class HomePage extends StatelessWidget {
                     GameCards(
                         imagePath: 'images/genshin.png',
                         GameText: 'Genshin Impact'),
-                    SizedBox(height: 8),
+                    SizedBox(height: 10),
                     GameCards(
                         imagePath: 'images/codwarzone.png',
                         GameText: 'COD Warzone Mobile'),
-                    SizedBox(height: 8),
+                    SizedBox(height: 10),
                     GameCards(
                         imagePath: 'images/sololeveling.png',
                         GameText: 'Arise: Solo Leveling'),
-                    SizedBox(height: 8),
+                    SizedBox(height: 10),
                     GameCards(
                         imagePath: 'images/fortnite.png', GameText: 'Fortnite'),
-                    SizedBox(height: 8),
+                    SizedBox(height: 10),
                     GameCards(
                         imagePath: 'images/hsr.png',
                         GameText: 'Honkai Star Rail'),

@@ -6,12 +6,26 @@ class GamePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: BG_COLOR,
-      appBar: AppBar(
-        automaticallyImplyLeading: true,
+    return SafeArea(
+      child: Scaffold(
         backgroundColor: BG_COLOR,
-        title: const Text('Games'),
+        appBar: AppBar(
+          automaticallyImplyLeading: true,
+          backgroundColor: BG_COLOR,
+          title: const Text('Games'),
+        ),
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Image.asset(
+                'images/wip.png',
+                height: 250,
+              ),
+              const Text('Feature currently in progress'),
+            ],
+          ),
+        ),
       ),
     );
   }

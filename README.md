@@ -1,16 +1,5 @@
-# phantom_coin
+# Phantom Coin
+This is a flutter project made for gamers. It's like a fusion of CodaShop and Steam.
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Page Screenshots
+![PhantomCoinInitial](https://github.com/Jsh-Syn/Phantom-Coin/assets/157363386/9f40da61-bc30-4ecb-90b5-937784b0a367)

@@ -27,7 +27,7 @@ class HomePage extends StatelessWidget {
                     textAlign: TextAlign.center,
                     'Phantom Coin',
                     style: TextStyle(
-                      color: Color.fromARGB(255, 233, 225, 255),
+                      color: COLOR_WHITE,
                       fontSize: 35,
                       fontWeight: FontWeight.bold,
                     ),
@@ -59,7 +59,7 @@ class HomePage extends StatelessWidget {
                         Text(
                           'In-game Currency Discounts',
                           style: TextStyle(
-                              fontSize: 17,
+                              fontSize: DESC_SIZE,
                               fontWeight: FontWeight.bold,
                               color: TEXT_COLOR),
                         ),
@@ -102,7 +102,7 @@ class HomePage extends StatelessWidget {
           Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => const GamePage(),
+              builder: (context) => GamePage(),
             ),
           );
         },

@@ -12,7 +12,7 @@ class GamePage extends StatelessWidget {
         backgroundColor: BG_COLOR,
         appBar: AppBar(
           automaticallyImplyLeading: true,
-          backgroundColor: const Color.fromARGB(255, 55, 28, 67),
+          backgroundColor: COLOR_CONTAINER,
           title: const Text(
             'Games',
             style: TextStyle(color: COLOR_WHITE),
@@ -28,8 +28,7 @@ class GamePage extends StatelessWidget {
                   height: 50,
                   width: double.infinity,
                   decoration: BoxDecoration(
-                    border: Border.all(
-                        color: const Color.fromARGB(255, 21, 12, 22)),
+                    border: Border.all(color: BTN_BORDER_COLOR),
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: const Padding(
@@ -104,7 +103,7 @@ class GamePage extends StatelessWidget {
     return Container(
       height: 65,
       width: double.infinity,
-      color: const Color.fromARGB(255, 99, 82, 106),
+      color: COLOR_CONTAINER,
       child: Row(
         children: [
           Image(

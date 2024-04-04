@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:phantom_coin/pages/games.dart';
-import 'package:phantom_coin/pages/services.dart';
+import 'package:phantom_coin/pages/profile_screen.dart';
 import 'package:phantom_coin/pages/streaming.dart';
 import 'package:phantom_coin/theme/style.dart';
 import 'package:phantom_coin/widgets/game_cards.dart';
@@ -17,7 +17,7 @@ class HomePage extends StatelessWidget {
         body: Column(
           children: [
             Container(
-              color: const Color.fromARGB(255, 55, 28, 67),
+              color: COLOR_CONTAINER,
               height: 130,
               width: 500,
               padding: const EdgeInsets.symmetric(vertical: 11, horizontal: 6),
@@ -28,7 +28,7 @@ class HomePage extends StatelessWidget {
                     'Phantom Coin',
                     style: TextStyle(
                       color: COLOR_WHITE,
-                      fontSize: 35,
+                      fontSize: LARGE_SIZE,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -106,7 +106,7 @@ class HomePage extends StatelessWidget {
             ),
           );
         },
-        color: const Color.fromARGB(255, 235, 220, 255),
+        color: BTN_WHITE,
         child: const Text('Games'),
       ),
     );
@@ -120,11 +120,11 @@ class HomePage extends StatelessWidget {
           Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => const StreamingPage(),
+                builder: (context) => StreamingPage(),
               ));
         },
-        color: const Color.fromARGB(255, 235, 220, 255),
-        child: const Text('Streaming'),
+        color: BTN_WHITE,
+        child: const Text('Community'),
       ),
     );
   }
@@ -137,12 +137,12 @@ class HomePage extends StatelessWidget {
           Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => const ServicesPage(),
+              builder: (context) => const ProfilePage(),
             ),
           );
         },
-        color: const Color.fromARGB(255, 235, 220, 255),
-        child: const Text('Services'),
+        color: BTN_WHITE,
+        child: const Text('Profile'),
       ),
     );
   }

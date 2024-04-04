@@ -10,7 +10,7 @@ class HPCard extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 3),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
-        color: const Color.fromARGB(255, 202, 174, 255),
+        color: COLOR_CONTAINER_LIGHT,
       ),
       width: 390,
       height: 200,

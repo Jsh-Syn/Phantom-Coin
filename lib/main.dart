@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:phantom_coin/pages/home_page.dart';
+
+import 'package:phantom_coin/pages/splash_screen.dart';
 
 void main() {
   runApp(const Home());
@@ -12,7 +13,7 @@ class Home extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(fontFamily: 'Poppins'),
-      home: const HomePage(),
+      home: const SplashScreen(),
     );
   }
 }
